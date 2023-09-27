@@ -10,13 +10,12 @@
     const quantNotas = Number(prompt(`Quantas notas o aluno obteve?`));
 
     //PROCESSAMENTO
-    let nota = [];
-    for (let index = 0; index < quantNotas.length; index++) {
-        nota = Number(prompt(`Qual as notas?`));
-        const nota = quantNotas[index];
-        
+    let soma = 0
+    for (let posicao = 0; posicao < quantNotas.length; posicao++) {
+        const notas = prompt(`Quais sao as notas?`)
+        soma = soma + notas
     }
-
+    
     //SAÍDA
-
+    alert(`A media das notas é ${(soma / quantNotas).toFixed(1)}`)
 </script>

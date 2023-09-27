@@ -6,14 +6,15 @@
     */
 
     //ENTRADA
-    listanum = []
+    let soma = 0
 
     //PROCESSAMENTO
     for (let index = 1; index <= 5; index++) {
-        const num = Number(prompt(`Informe um numero`))
-        listanum.push(num)
+        const numeros = Number(prompt(`informe um numero`))
+        soma = soma + numeros
     }
+
     //SAÍDA
-    
+    alert(`A soma dos numeros é ${soma}; e a media das é ${(soma / 5).toFixed(1)}`)
 
 </script>
