@@ -7,15 +7,16 @@
     */
 
     //ENTRADA
-    const quantNotas = Number(prompt(`Quantas notas o aluno obteve?`));
+    const nota = Number(prompt(`Quantas notas o aluno teve?`))
+    let media = 0
 
     //PROCESSAMENTO
-    let soma = 0
-    for (let posicao = 0; posicao < quantNotas.length; posicao++) {
-        const notas = prompt(`Quais sao as notas?`)
-        soma = soma + notas
+    for (let contador = 1; contador <= nota; contador++) {
+        let notas = Number(prompt(`Qual a nota do aluno?`))
+        media = media + notas
     }
-    
+    const mediaFinal = media / nota
+
     //SAÍDA
-    alert(`A media das notas é ${(soma / quantNotas).toFixed(1)}`)
+    alert(`O aluno teve ${nota} notas, com média de ${mediaFinal.toFixed(1)}`)
 </script>

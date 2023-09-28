@@ -5,11 +5,19 @@
     */
 
     //ENTRADA
-
+    let multiplos = []
+    let soma = 0
 
     //PROCESSAMENTO
-
+    for (let index = 1; index <= 100; index++) {
+        if (index % 3 == 0){
+            multiplos.push(index)
+            soma = soma + index
+        }
+        
+    }
 
     //SAÍDA
-
+    alert(`Os multiplos d 3 à 100 sao: ${multiplos.join(", ")}`)
+    alert(`E a soma de todos eles é: ${soma}`)
 </script>
